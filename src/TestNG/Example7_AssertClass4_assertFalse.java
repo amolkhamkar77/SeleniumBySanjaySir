@@ -10,7 +10,7 @@ public class Example7_AssertClass4_assertFalse
 	{
 		boolean actResult = true;
 		
-		Assert.assertFalse(actResult,"Failed: act result is true- ");
+		Assert.assertFalse(actResult,"Failed: act result is true");
 	}
 
 }

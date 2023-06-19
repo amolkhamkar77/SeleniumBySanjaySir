@@ -17,5 +17,8 @@ public class Example7_AssertClass5
 		boolean actResult1 = false;		
 		Assert.assertTrue(actResult1,"Failed2: act result is false- ");
 	}
+	
+	
+	
 
 }
