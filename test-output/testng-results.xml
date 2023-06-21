@@ -1,85 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="8" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
-    <line>
-      <![CDATA[--running TC1--]]>
-    </line>
-    <line>
-      <![CDATA[--running TC2--]]>
-    </line>
-    <line>
-      <![CDATA[--running TC3--]]>
-    </line>
-    <line>
-      <![CDATA[--running TC1--]]>
-    </line>
-    <line>
-      <![CDATA[--running TC2--]]>
-    </line>
-    <line>
-      <![CDATA[--running TC3--]]>
-    </line>
   </reporter-output>
-  <suite started-at="2023-06-19T08:31:55 IST" name="Suite" finished-at="2023-06-19T08:31:55 IST" duration-ms="41">
+  <suite started-at="2023-06-21T08:40:58 IST" name="Default suite" finished-at="2023-06-21T08:41:52 IST" duration-ms="53679">
     <groups>
-      <group name="login">
-        <method signature="example10_grouping1.TC1()[pri:0, instance:TestNG.example10_grouping1@d29f28]" name="TC1" class="TestNG.example10_grouping1"/>
-        <method signature="example10_grouping1.TC2()[pri:0, instance:TestNG.example10_grouping1@d29f28]" name="TC2" class="TestNG.example10_grouping1"/>
-        <method signature="example10_grouping2.TC1()[pri:0, instance:TestNG.example10_grouping2@483f6d77]" name="TC1" class="TestNG.example10_grouping2"/>
-      </group> <!-- login -->
-      <group name="setting">
-        <method signature="example10_grouping1.TC3()[pri:0, instance:TestNG.example10_grouping1@d29f28]" name="TC3" class="TestNG.example10_grouping1"/>
-        <method signature="example10_grouping2.TC2()[pri:0, instance:TestNG.example10_grouping2@483f6d77]" name="TC2" class="TestNG.example10_grouping2"/>
-        <method signature="example10_grouping2.TC3()[pri:0, instance:TestNG.example10_grouping2@483f6d77]" name="TC3" class="TestNG.example10_grouping2"/>
-      </group> <!-- setting -->
     </groups>
-    <test started-at="2023-06-19T08:31:55 IST" name="Test" finished-at="2023-06-19T08:31:55 IST" duration-ms="41">
-      <class name="TestNG.example10_grouping2">
-        <test-method signature="TC1()[pri:0, instance:TestNG.example10_grouping2@483f6d77]" started-at="2023-06-19T08:31:55 IST" name="TC1" finished-at="2023-06-19T08:31:55 IST" duration-ms="1" status="PASS">
+    <test started-at="2023-06-21T08:40:58 IST" name="Default test" finished-at="2023-06-21T08:41:52 IST" duration-ms="53679">
+      <class name="POM_DDF_TestNG.PBLoginTest1">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:POM_DDF_TestNG.PBLoginTest1@611889f4]" started-at="2023-06-21T08:40:58 IST" name="openBrowser" finished-at="2023-06-21T08:41:10 IST" duration-ms="11680" status="PASS">
           <reporter-output>
-            <line>
-              <![CDATA[--running TC1--]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- TC1 -->
-        <test-method signature="TC2()[pri:0, instance:TestNG.example10_grouping2@483f6d77]" started-at="2023-06-19T08:31:55 IST" name="TC2" finished-at="2023-06-19T08:31:55 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="loginToApp()[pri:0, instance:POM_DDF_TestNG.PBLoginTest1@611889f4]" started-at="2023-06-21T08:41:10 IST" name="loginToApp" finished-at="2023-06-21T08:41:31 IST" duration-ms="20740" status="PASS">
           <reporter-output>
-            <line>
-              <![CDATA[--running TC2--]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- TC2 -->
-        <test-method signature="TC3()[pri:0, instance:TestNG.example10_grouping2@483f6d77]" started-at="2023-06-19T08:31:55 IST" name="TC3" finished-at="2023-06-19T08:31:55 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- loginToApp -->
+        <test-method signature="verifyFullName()[pri:0, instance:POM_DDF_TestNG.PBLoginTest1@611889f4]" started-at="2023-06-21T08:41:31 IST" name="verifyFullName" finished-at="2023-06-21T08:41:51 IST" duration-ms="20572" status="PASS">
           <reporter-output>
-            <line>
-              <![CDATA[--running TC3--]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- TC3 -->
-      </class> <!-- TestNG.example10_grouping2 -->
-      <class name="TestNG.example10_grouping1">
-        <test-method signature="TC1()[pri:0, instance:TestNG.example10_grouping1@d29f28]" started-at="2023-06-19T08:31:55 IST" name="TC1" finished-at="2023-06-19T08:31:55 IST" duration-ms="5" status="PASS">
+        </test-method> <!-- verifyFullName -->
+        <test-method is-config="true" signature="name()[pri:0, instance:POM_DDF_TestNG.PBLoginTest1@611889f4]" started-at="2023-06-21T08:41:51 IST" name="name" finished-at="2023-06-21T08:41:51 IST" duration-ms="1" status="PASS">
           <reporter-output>
-            <line>
-              <![CDATA[--running TC1--]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- TC1 -->
-        <test-method signature="TC2()[pri:0, instance:TestNG.example10_grouping1@d29f28]" started-at="2023-06-19T08:31:55 IST" name="TC2" finished-at="2023-06-19T08:31:55 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- name -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:POM_DDF_TestNG.PBLoginTest1@611889f4]" started-at="2023-06-21T08:41:51 IST" name="closeBrowser" finished-at="2023-06-21T08:41:52 IST" duration-ms="663" status="PASS">
           <reporter-output>
-            <line>
-              <![CDATA[--running TC2--]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- TC2 -->
-        <test-method signature="TC3()[pri:0, instance:TestNG.example10_grouping1@d29f28]" started-at="2023-06-19T08:31:55 IST" name="TC3" finished-at="2023-06-19T08:31:55 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[--running TC3--]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC3 -->
-      </class> <!-- TestNG.example10_grouping1 -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- POM_DDF_TestNG.PBLoginTest1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
