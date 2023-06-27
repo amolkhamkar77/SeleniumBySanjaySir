@@ -9,7 +9,7 @@ public class example5_TestNGKeyword5_dependsOnMethod
 	@Test
 	public void login() 
 	{
-		Reporter.log("--running login TC--",true)
+		Reporter.log("--running login TC--",true);
 	}
 	
 	

@@ -32,7 +32,7 @@ public class example9
 	@Test
 	public void TC5()
 	{
-		Reporter.log("--running TC5--",true)
+		Reporter.log("--running TC5--",true);
 	}
 
 }

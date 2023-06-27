@@ -15,7 +15,7 @@ public class example5_TestNGKeyword5_dependsOnMethod2
 	@Test
 	public void login2() 
 	{
-		Reporter.log("--running login2 TC--",true)
+		Reporter.log("--running login2 TC--",true);
 	}
 	
 	
