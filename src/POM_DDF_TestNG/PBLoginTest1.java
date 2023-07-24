@@ -19,7 +19,7 @@ import org.testng.annotations.Test;
 
 public class PBLoginTest1 
 {
-	int a;     //declare globally
+	int a;     //declare globally --> DataType Variable
 	PBLoginPage login;
 	PBMobNumPage mobNum;
 	PBPwdPage pwd;
@@ -31,6 +31,7 @@ public class PBLoginTest1
 	
 	
 	@BeforeClass
+	//Browser Opening code + Excel Sheet code + Object Creation of multiple POM classes --> those code which is used one time
 	public void openBrowser() throws EncryptedDocumentException, IOException
 	{
 		FileInputStream file=new FileInputStream("C:\\Users\\sanja\\OneDrive\\Desktop\\Study\\28Th Jan Eve\\28thJan.xlsx");
@@ -41,16 +42,20 @@ public class PBLoginTest1
 		driver.get("https://www.policybazaar.com/");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 		
+//  PBLoginPage	login=new PBLoginPage(driver); --> Object creation
+// Left part Declared Globally i.e 	PBLoginPage	login; --> ClassName objRefVariable
+//	login=new PBLoginPage(driver); -->Declared Locally --> objRefVariable = new ClassName(parameter if any);
 		 login=new PBLoginPage(driver);
 		 mobNum=new PBMobNumPage(driver);
 		 pwd=new PBPwdPage(driver);
 		 home=new PBHomePage(driver);
 		 myAcc=new PBMyAccPage(driver);
 		 profile=new PBProfilePage(driver);
-		 a=10;         //initialize locally
+		 a=10;         //initialize locally --> Variablr = Value;
 	}
 	
 	@BeforeMethod
+	// Application login functionality flow code
 	public void loginToApp() throws InterruptedException
 	{
 		System.out.println(a);
@@ -64,6 +69,7 @@ public class PBLoginTest1
 	
 	
 	@Test
+	// Test case --> Flow of Test Case functionality
 	public void verifyFullName() throws InterruptedException 
 	{
 		home.openDDOptionPBHomePageMyAcc();
@@ -79,6 +85,7 @@ public class PBLoginTest1
 	}
 	
 	@AfterMethod
+// Application logout functionality--> if you dont want to logout your application then keep it empty or you can delete this annotation
 	public void name() 
 	{
 		
@@ -86,6 +93,7 @@ public class PBLoginTest1
 	
 	
 	@AfterClass
+// browser closig code	
 	public void closeBrowser()
 	{
 		driver.quit();

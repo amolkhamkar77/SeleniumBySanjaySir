@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>TestNG:  Test2_Chrome</title>
+<title>TestNG:  Test1_Edge</title>
 <link href="../testng.css" rel="stylesheet" type="text/css" />
 <link href="../my-testng.css" rel="stylesheet" type="text/css" />
 
@@ -53,13 +53,13 @@ function toggleAllBoxes() {
 
 </head>
 <body>
-<h2 align='center'>Test2_Chrome</h2><table border='1' align="center">
+<h2 align='center'>Test1_Edge</h2><table border='1' align="center">
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
 <td>Started on:</td><td>Sat Jul 22 11:48:02 PDT 2023</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (301 ms)</td>
+<tr><td>Total time:</td><td>122 seconds (122949 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,17 +76,31 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='TestNG.example12_MultiBrowserTesting.TC1()'><b>TC1</b><br>Test class: TestNG.example12_MultiBrowserTesting<br>Parameters: Edge</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;driver&quot; is null
-	at TestNG.example12_MultiBrowserTesting.TC1(example12_MultiBrowserTesting.java:32)
+<td title='TestNG.example12_MultiBrowserTesting.TC1()'><b>TC1</b><br>Test class: TestNG.example12_MultiBrowserTesting<br>Parameters: edge</td>
+<td><div><pre>java.lang.IllegalStateException: The path to the driver executable Unable to locate the msedgedriver executable; for more information on how to install drivers, see https://www.selenium.dev/documentation/webdriver/getting_started/install_drivers/
+	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:314)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:34)
+	at org.openqa.selenium.edge.EdgeDriver.generateExecutor(EdgeDriver.java:70)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:60)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:56)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:48)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at TestNG.example12_MultiBrowserTesting.TC1(example12_MultiBrowserTesting.java:29)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1589)
-... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1891438756", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1891438756'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;driver&quot; is null
-	at TestNG.example12_MultiBrowserTesting.TC1(example12_MultiBrowserTesting.java:32)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace634896710", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace634896710'><pre>java.lang.IllegalStateException: The path to the driver executable Unable to locate the msedgedriver executable; for more information on how to install drivers, see https://www.selenium.dev/documentation/webdriver/getting_started/install_drivers/
+	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:314)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:34)
+	at org.openqa.selenium.edge.EdgeDriver.generateExecutor(EdgeDriver.java:70)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:60)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:56)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:48)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at TestNG.example12_MultiBrowserTesting.TC1(example12_MultiBrowserTesting.java:29)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -108,8 +122,8 @@ function toggleAllBoxes() {
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1589)
 </pre></div></td>
-<td>0</td>
-<td>TestNG.example12_MultiBrowserTesting@1a75e76a</td></tr>
+<td>122</td>
+<td>TestNG.example12_MultiBrowserTesting@3646a422</td></tr>
 </table><p>
 </body>
 </html>
